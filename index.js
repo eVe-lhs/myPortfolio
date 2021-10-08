@@ -56,6 +56,7 @@ app.post("/email", function (request, response) {
     if (err) {
       console.log(err);
       console.log(process.env.EMAIL);
+      console.log(process.env.PASSWORD);
       response.json({
         message: "message not sent: an error occured",
       });
