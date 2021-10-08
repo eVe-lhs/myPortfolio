@@ -55,6 +55,7 @@ app.post("/email", function (request, response) {
   transporter.sendMail(mail, function (err, info) {
     if (err) {
       console.log(err);
+      console.log(process.env.EMAIL);
       response.json({
         message: "message not sent: an error occured",
       });
