@@ -26,7 +26,6 @@ app.use(log);
 // end custom middleware
 
 // enable static files pointing to the folder "build"
-app.use(express.static("build"));
 
 // HTTP POST
 app.post("/email", function (request, response) {
